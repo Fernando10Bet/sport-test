@@ -263,6 +263,11 @@ function popupPromo10() {
 var popup = document.getElementById("myPopup");
 popup.classList.toggle("show");
 }
+
+function popupPromo102() {
+    var popup = document.getElementById("myPopup2");
+    popup.classList.toggle("show");
+    }
   /*END OF POPUP and COPY PROMO CODE on click*/
 
   /*Accordeon start*/
