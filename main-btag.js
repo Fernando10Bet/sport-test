@@ -240,6 +240,7 @@ function includeHTML() {
 
       /*POPUP and COPY PROMO CODE on click*/
 let text = document.getElementById('myText10').innerHTML;
+let text2 = "JUEGODOBLE";
 const copyContent = async () => {
   try {
     await navigator.clipboard.writeText(text);
@@ -248,6 +249,15 @@ const copyContent = async () => {
     console.error('Failed to copy: ', err);
   }
 }
+
+const copyContent2 = async () => {
+    try {
+      await navigator.clipboard.writeText(text);
+      console.log('Content copied to clipboard');
+    } catch (err) {
+      console.error('Failed to copy: ', err);
+    }
+  }
 // When the user clicks on div, open the popup
 function popupPromo10() {
 var popup = document.getElementById("myPopup");
